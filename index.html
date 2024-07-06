@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <a href="https://drive.google.com/file/d/1NHMIunGzvuersaK-VG2BR012gyTnpDY_/view?usp=sharing" target="click here" rel="noopener noreferrer"></a>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .toggle-container {
+            margin: 20px;
+        }
+
+        .toggle-button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <h1>all question are important, </h1>
-    <p><a href="https://drive.google.com/file/d/1NHMIunGzvuersaK-VG2BR012gyTnpDY_/view?usp=sharing">Click here</a> to visit chemistry question bank</p>
-    <p><a href="https://drive.google.com/drive/folders/1O7V1psTzwY0Hu94oSXsFuGOFoZ-KMpoO?usp=drive_link">Click here</a> to visit maths question</p> 
+    <p><a href="./assets/chemistry/Applied Chemistry for CSE - simp qb.pdf">Click here</a> to visit chemistry question bank</p>
+
+    <div class="toggle-container">
+        <button class="toggle-button" onclick="toggleList()">Click here for Maths</button>
+        <ul id="toggle-list" class="hidden">
+            <li><a href="./assets/maths/MOD 1 VECTORS FINAL CS Stream.pdf">Module 1</a></li>
+            <li><a href="./assets/maths/NUMERICAL METHODS 2.pdf">Module 2</a></li>
+            <li><a href="./assets/maths/MODULE 3 VECTOR SPACES CSE STREAM.pdf">Module 3</a></li>
+            <li><a href="./assets/maths/MODULE 4 NUMERICAL METHODS 1 ME AND CV STREAM.pdf">Module 4</a></li>
+            <li><a href="./assets/maths/MODULE 5 NUMERICAL METHODS 2 ME AND CV STREAM.pdf">Module 5</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleList() {
+            const list = document.getElementById('toggle-list');
+            list.classList.toggle('hidden');
+        }
+    </script>
 
 </body>
 </html>
